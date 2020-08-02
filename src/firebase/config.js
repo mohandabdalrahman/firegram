@@ -15,8 +15,10 @@ firebase.initializeApp(firebaseConfig);
 
 const programStorage = firebase.storage()
 const programFireStore = firebase.firestore()
+const timestamp = firebase.firestore.FieldValue.serverTimestamp
 
 export {
   programStorage,
-  programFireStore
+  programFireStore,
+  timestamp
 }
